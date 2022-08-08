@@ -4,3 +4,19 @@
 // 8 -> 2, 4, 6, 8
 
 
+Console.Write("Введите число: ");
+int num1 = int.Parse(Console.ReadLine());
+int count = 2;
+
+while (count <= num1)
+{
+    if(count % 2 == 0)
+    {
+    Console.Write($"{count} ");
+    count++;
+    }
+    else
+    {
+        count++;
+    }
+}
