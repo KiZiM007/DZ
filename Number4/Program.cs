@@ -12,25 +12,19 @@ Console.Write("Введите второе число: ");
 int num2 = int.Parse(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int num3 = int.Parse(Console.ReadLine());
+int max = num1;
+
 
 if (num1 > num2)
 {
-    if (num1 > num3)
-    {
-        Console.Write($"Самое большое число {num1}");
-    }
-    else 
-    {
-        Console.Write($"Самое большое число {num3}");
-    }
+    max = num1;
+}
+else if (num2 > num3)
+{
+    max = num2;
 }
 else
 {
-if (num2 > num3)
-{
-    Console.Write($"Самое большое число {num2}");
+    max = num3;
 }
-else
-    Console.Write($"Самое большое число {num3}");    
-}
-
+Console.Write($"Наибольшее число {max}");

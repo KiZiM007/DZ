@@ -7,7 +7,8 @@
 Console.Write("Введите число: ");
 int num1 = int.Parse(Console.ReadLine());
 int count = 2;
-
+if(num1>1)
+{
 while (count <= num1)
 {
     if(count % 2 == 0)
@@ -19,4 +20,9 @@ while (count <= num1)
     {
         count++;
     }
+}
+}
+else
+{
+    Console.Write("В данном диапазоне нет четных чисел");
 }
